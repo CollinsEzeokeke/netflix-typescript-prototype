@@ -1,0 +1,178 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.body{
+    background-color: rgb(238,238,234);
+}
+
+.header-1{
+    background-color: rgb(35,31,31);
+    height: 75vh;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.pic{
+    width: 15%;
+    height: auto;
+}
+
+.top-header{
+    display: flex;
+    justify-content: space-between;
+    background-color: blue;
+    width: 100%;
+    position: fixed;
+    height: 20%;
+}
+
+.top-header .pic{
+    width: 60%;
+    height: auto;
+}
+
+.top-header h3{
+    display: flex;
+    align-items: center;
+}
+
+.left{
+    height: 80%;
+    display: flex;
+    justify-content: center;
+}
+
+.right{
+    height: 50%;
+    display: flex;
+    align-items: center;
+}
+
+.right a{
+    font-style: normal;
+    text-decoration: none;
+    color: white;
+    margin-left: 20px;
+    font-size: 25px;
+}
+
+.bottom{
+    height: 55vh;
+    margin-top: 20vh;
+    display: flex;
+    justify-content: center;
+}
+
+.main-bottom{
+    width: 90%;
+    font-size: large;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-bottom h1{
+    margin-bottom: 10px;
+}
+
+.input{
+    height: 100%;
+    width: 100%;
+}
+
+.input::placeholder{
+    font-size: xx-large;
+    display: flex;
+}
+.search-box{
+    height: 20%;
+    width: 75%;
+}
+
+.card-1{
+    display: flex;
+    width: 97%;
+    height: 57.6vh;
+    margin-top: 10%;
+    margin-left: 20px;
+    background-color: white;
+}
+
+.left-card{
+    width: 60%;
+    border-right: rgb(191,8,16) 30px solid;
+}
+
+.left-card-content{
+    width: 90%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-left: 5%;
+    margin-top: 5%;
+}
+
+    /*Quick Transform*/
+
+.text-capitalize{
+    text-transform: capitalize;
+}
+
+.text-uppercase{
+    text-transform: uppercase;
+}
+
+.text-lowercase{
+    text-transform: lowercase;
+}
+
+/*end*/
+
+.heading{
+    font-size: 110%;
+
+}
+
+.card-content p{
+    color: rgb(26, 24, 24);
+}
+
+.link{
+    width: 50%;
+    height: 15%;
+}
+
+.link button{
+    background-color: rgb(191,8,16);
+    width: 100%;
+    height: 100%;
+    border: none;
+    color: white;
+    font-weight: bolder;
+}
+
+
+.card-2{
+    display: flex;
+    margin-top: 10%;
+    margin-left: 20px;
+    background-color: red;
+}
+
+.card-2-left{
+    width: 50%;
+    background-color: blue;
+}
+
+.card-2-left img{
+    width: inherit;
+}
+
+.card-2-right{
+    width: 50%;
+    height: 60vh;
+}
