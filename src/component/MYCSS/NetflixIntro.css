@@ -1,0 +1,201 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+    overflow: hidden;
+}
+
+.netflixintro {
+    display: block;
+    position: relative;
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+    animation-name: zoom-in;
+    animation-delay: 0.5s;
+    animation-duration: 3.5s;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+    background-size: 4000px;
+    background-position: -1950px 0;
+}
+
+.netflixintro::before {
+    content: "";
+    position: absolute;
+    display: block;
+    background-color: #000000;
+    width: 150%;
+    height: 30%;
+    left: -25%;
+    bottom: -27%;
+    border-radius: 50%;
+    z-index: 5;
+    transform-origin: left center;
+    background-size: 4000px;
+    background-position: -1950px 0;
+}
+
+.netflixintro[letter="N"] {
+    transform-origin: 30% center;
+}
+
+.netflixintro[letter="N"] .helper-1 {
+    width: 19.5%;
+    height: 100%;
+    background-color: rgba(228, 9, 19, 0.5);
+    left: 22.4%;
+    top: 0;
+    transform: rotate(180deg);
+    animation-name: fading-lumieres-box;
+    animation-duration: 2s;
+    animation-delay: 0.6s;
+    animation-fill-mode: forwards;
+}
+
+.netflixintro[letter="N"] .helper-1 .effect-brush {
+    animation-name: brush-moving;
+    animation-duration: 2.5s;
+    animation-fill-mode: forwards;
+    animation-delay: 1.2s;
+}
+
+.netflixintro[letter="N"] .helper-1 .effect-brush [class*="fur-"] {
+    bottom: 0;
+    height: 40%;
+}
+
+.netflixintro[letter="N"] .helper-3 {
+    width: 19%;
+    height: 150%;
+    left: 40.5%;
+    top: -25%;
+    transform: rotate(-19.5deg);
+    box-shadow: 0px 0px 35px -12px rgba(0, 0, 0, 0.4);
+    overflow: hidden;
+}
+
+.netflixintro[letter="N"] .helper-3 .effect-brush {
+    animation-name: brush-moving;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-delay: 0.8s;
+}
+
+.netflixintro[letter="N"] .helper-2 {
+    width: 19.5%;
+    height: 100%;
+    left: 57.8%;
+    top: 0;
+    transform: rotate(180deg);
+    overflow: hidden;
+}
+
+.netflixintro[letter="N"] .helper-2 .effect-brush {
+    animation-name: brush-moving;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-delay: 0.5s;
+}
+
+/* Repeat similar transformations for other letters (E, T, F, L, I, X) */
+
+[class*="helper-"] {
+    position: absolute;
+}
+
+.effect-brush {
+    position: absolute;
+    width: 100%;
+    height: 300%;
+    top: 0;
+    overflow: hidden;
+}
+
+.effect-brush::before {
+    display: block;
+    content: "";
+    position: absolute;
+    background-color: #e40913;
+    width: 100%;
+    height: 70%;
+    box-shadow: 0px 0px 29px 24px #e40913;
+}
+
+[class*="fur-"] {
+    display: block;
+    position: absolute;
+    bottom: 10%;
+    height: 30%;
+}
+
+.fur-1 {
+    left: 0%;
+    width: 3.8%;
+    background: linear-gradient(to bottom, #e40913 0%, #e40913 15%, rgba(0, 0, 0, 0) 81%, rgba(0, 0, 0, 0) 100%);
+}
+
+.fur-2 {
+    left: 3.8%;
+    width: 2.8%;
+    background: linear-gradient(to bottom, #e40913 0%, #e40913 10%, rgba(0, 0, 0, 0) 62%, rgba(0, 0, 0, 0) 100%);
+}
+
+/* Repeat similar styles for other fur classes (fur-3 to fur-31) */
+
+.effect-lumieres {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    animation-name: showing-lumieres;
+    animation-duration: 2s;
+    animation-delay: 1.6s;
+    animation-fill-mode: forwards;
+}
+
+[class*="lamp-"] {
+    position: absolute;
+    display: block;
+    height: 100%;
+    box-shadow: 0px 0px 10px 0px rgba(228, 9, 19, 0.75);
+    background: var(--color);
+}
+
+[class*="lamp-"]::before {
+    position: absolute;
+    content: " ";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: var(--color);
+    box-shadow: 0px 0px 10px 0px rgba(228, 9, 19, 0.75);
+}
+
+/* Repeat similar styles for lamp classes (lamp-1 to lamp-9) */
+
+/* Define keyframes for animations (zoom-in, fading-lumieres-box, brush-moving, showing-lumieres) */
+
+/* Example for zoom-in animation */
+@keyframes zoom-in {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.2);
+    }
+}
+
+/* Define other animations as needed */

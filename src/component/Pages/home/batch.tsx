@@ -60,11 +60,13 @@ const Batch: React.FC = () => {
       <div className="content">
         <div className="tvHolder">
           <div className="side-tv">
-            <h1 className="none">Enjoy your TV.</h1>
+            <h1>Enjoy your TV.</h1>
+            <div className="toCenter">
             <h3>
               Watch on smart TVs, Playstation, Xbox, Chromecast, Apple TV,
               Blu-ray players, and more
             </h3>
+            </div>
           </div>
           <div className="tv">
             <VideoPlayer src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-tv-0819.m4v" />

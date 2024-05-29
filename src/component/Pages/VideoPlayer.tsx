@@ -6,7 +6,7 @@ interface VideoPlayerProps {
 
 const VideoPlayer: React.FC<VideoPlayerProps> = ({ src }) => {
   return (
-    <div className="video-player">
+    <div>
       <video autoPlay playsInline muted loop controls={false}>
         <source src={src} type="video/mp4" />
       </video>

@@ -116,29 +116,11 @@ h3{
     font-size: 30px;
     font-weight: lighter;
 }
-
-
-
-@media screen and (max-width: 360px){
-    *{
-        margin: 0;
-        padding: 0;
-    }
-    
-    body{
-        font-size: 10px;
-        width: 360px;
-    }
-
-    .comp{
-        width: 10px;
-    }
-
 .content{
     margin-top: 30px;
     border-top: solid 10px rgb(39,38,38);
     border-bottom: solid 10px rgb(39,38,38);
-    background-color: aquamarine;
+    /* background-color: aquamarine; */
     height: 80vh;
     display: flex;
     align-items: center;
@@ -146,9 +128,8 @@ h3{
 }
 
     .none{
-        font-size: 10px;
+        font-size: xx-large;
     }
-}
 
 .slider-container {
   display: flex;
@@ -188,27 +169,53 @@ h3{
   }
   
   .video-player{
-    background-image: url('../images/tv.png');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    width: 20vw;
     /* background-color: red; */
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 80vh;
+    height: 100%;
+    width: min-content;
   }
   .tv{
-    background-color: yellow;
-  }
-  .side-tv{
-    background-color: blue;
+    background-image: url('../images/tv.png');
+    background-color: brown;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    height: 51vh;
+    width: 44%;
+    display: flex;
+    justify-content: center;
   }
 
+  .tv video{
+    width: 93.5%;
+    position: absolute;
+    top: 74px;
+    left: 10px;
+  }
+  .side-tv{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+  }
+
+  .side-tv h1{
+    font-size: 50px;
+    font-weight: bolder;
+  }
+
+.toCenter{
+    display: flex;
+    width: 60%;
+    height: 50%;
+    font-size: 1.2em;
+}
+
   .tvHolder{
-    background-color: blueviolet;
-    width: 100%;
+    width: 80%;
     height: 100%;
     display: flex;
     align-items: center;
